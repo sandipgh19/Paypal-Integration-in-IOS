@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97A7EF46E0607216A0F478F5 /* Pods_PaypalTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05E162032C19DF2AB80BB1C /* Pods_PaypalTest.framework */; };
+		D07147811E56AEB3001BFEB0 /* TurfCommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07147801E56AEB3001BFEB0 /* TurfCommonFunctions.swift */; };
+		D07147831E56B95D001BFEB0 /* libPaymentsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07147821E56B95D001BFEB0 /* libPaymentsSDK.a */; };
+		D07307571E5626C2009DCC09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07307561E5626C2009DCC09 /* AppDelegate.swift */; };
+		D07307591E5626C2009DCC09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07307581E5626C2009DCC09 /* ViewController.swift */; };
+		D073075C1E5626C2009DCC09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D073075A1E5626C2009DCC09 /* Main.storyboard */; };
+		D073075E1E5626C2009DCC09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D073075D1E5626C2009DCC09 /* Assets.xcassets */; };
+		D07307611E5626C2009DCC09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D073075F1E5626C2009DCC09 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		198D660486C29E7D38B15DF5 /* Pods-PaypalTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaypalTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaypalTest/Pods-PaypalTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B3DEB8141F7D8F56E6DE7DA6 /* Pods-PaypalTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaypalTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaypalTest/Pods-PaypalTest.release.xcconfig"; sourceTree = "<group>"; };
+		C05E162032C19DF2AB80BB1C /* Pods_PaypalTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaypalTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07147801E56AEB3001BFEB0 /* TurfCommonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurfCommonFunctions.swift; sourceTree = "<group>"; };
+		D07147821E56B95D001BFEB0 /* libPaymentsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentsSDK.a; sourceTree = "<group>"; };
+		D07307531E5626C2009DCC09 /* PaypalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaypalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07307561E5626C2009DCC09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D07307581E5626C2009DCC09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D073075B1E5626C2009DCC09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D073075D1E5626C2009DCC09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D07307601E5626C2009DCC09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D07307621E5626C2009DCC09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07EA6801E56A26B009CFC33 /* PaypalTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaypalTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		D07EA6851E56A627009CFC33 /* PaymentsSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentsSDK.h; sourceTree = "<group>"; };
+		D07EA6861E56A627009CFC33 /* PGMerchantConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMerchantConfiguration.h; sourceTree = "<group>"; };
+		D07EA6871E56A627009CFC33 /* PGOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGOrder.h; sourceTree = "<group>"; };
+		D07EA6881E56A627009CFC33 /* PGServerEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGServerEnvironment.h; sourceTree = "<group>"; };
+		D07EA6891E56A627009CFC33 /* PGTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGTransactionViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D07307501E5626C2009DCC09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A7EF46E0607216A0F478F5 /* Pods_PaypalTest.framework in Frameworks */,
+				D07147831E56B95D001BFEB0 /* libPaymentsSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73E9B962277DCEE2FB419822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C05E162032C19DF2AB80BB1C /* Pods_PaypalTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBB1C8F1AE362E65EBFBCE84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				198D660486C29E7D38B15DF5 /* Pods-PaypalTest.debug.xcconfig */,
+				B3DEB8141F7D8F56E6DE7DA6 /* Pods-PaypalTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D073074A1E5626C2009DCC09 = {
+			isa = PBXGroup;
+			children = (
+				D07307551E5626C2009DCC09 /* PaypalTest */,
+				D07307541E5626C2009DCC09 /* Products */,
+				BBB1C8F1AE362E65EBFBCE84 /* Pods */,
+				73E9B962277DCEE2FB419822 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D07307541E5626C2009DCC09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D07307531E5626C2009DCC09 /* PaypalTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D07307551E5626C2009DCC09 /* PaypalTest */ = {
+			isa = PBXGroup;
+			children = (
+				D07EA6831E56A627009CFC33 /* PaymentsSDK */,
+				D07307561E5626C2009DCC09 /* AppDelegate.swift */,
+				D07307581E5626C2009DCC09 /* ViewController.swift */,
+				D07147801E56AEB3001BFEB0 /* TurfCommonFunctions.swift */,
+				D073075A1E5626C2009DCC09 /* Main.storyboard */,
+				D073075D1E5626C2009DCC09 /* Assets.xcassets */,
+				D073075F1E5626C2009DCC09 /* LaunchScreen.storyboard */,
+				D07307621E5626C2009DCC09 /* Info.plist */,
+				D07EA6801E56A26B009CFC33 /* PaypalTest-Bridging-Header.h */,
+			);
+			path = PaypalTest;
+			sourceTree = "<group>";
+		};
+		D07EA6831E56A627009CFC33 /* PaymentsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D07147821E56B95D001BFEB0 /* libPaymentsSDK.a */,
+				D07EA6841E56A627009CFC33 /* include */,
+			);
+			path = PaymentsSDK;
+			sourceTree = "<group>";
+		};
+		D07EA6841E56A627009CFC33 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D07EA6851E56A627009CFC33 /* PaymentsSDK.h */,
+				D07EA6861E56A627009CFC33 /* PGMerchantConfiguration.h */,
+				D07EA6871E56A627009CFC33 /* PGOrder.h */,
+				D07EA6881E56A627009CFC33 /* PGServerEnvironment.h */,
+				D07EA6891E56A627009CFC33 /* PGTransactionViewController.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D07307521E5626C2009DCC09 /* PaypalTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D07307651E5626C2009DCC09 /* Build configuration list for PBXNativeTarget "PaypalTest" */;
+			buildPhases = (
+				972464610CF0A11D96594318 /* [CP] Check Pods Manifest.lock */,
+				D073074F1E5626C2009DCC09 /* Sources */,
+				D07307501E5626C2009DCC09 /* Frameworks */,
+				D07307511E5626C2009DCC09 /* Resources */,
+				EE0A993AB00B867C1599CB0E /* [CP] Embed Pods Frameworks */,
+				EA3078B17D792C27D7F412FC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaypalTest;
+			productName = PaypalTest;
+			productReference = D07307531E5626C2009DCC09 /* PaypalTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D073074B1E5626C2009DCC09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Sandip Ghosh";
+				TargetAttributes = {
+					D07307521E5626C2009DCC09 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D073074E1E5626C2009DCC09 /* Build configuration list for PBXProject "PaypalTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D073074A1E5626C2009DCC09;
+			productRefGroup = D07307541E5626C2009DCC09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D07307521E5626C2009DCC09 /* PaypalTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D07307511E5626C2009DCC09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07307611E5626C2009DCC09 /* LaunchScreen.storyboard in Resources */,
+				D073075E1E5626C2009DCC09 /* Assets.xcassets in Resources */,
+				D073075C1E5626C2009DCC09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		972464610CF0A11D96594318 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA3078B17D792C27D7F412FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaypalTest/Pods-PaypalTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE0A993AB00B867C1599CB0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaypalTest/Pods-PaypalTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D073074F1E5626C2009DCC09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07307591E5626C2009DCC09 /* ViewController.swift in Sources */,
+				D07147811E56AEB3001BFEB0 /* TurfCommonFunctions.swift in Sources */,
+				D07307571E5626C2009DCC09 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D073075A1E5626C2009DCC09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D073075B1E5626C2009DCC09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D073075F1E5626C2009DCC09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D07307601E5626C2009DCC09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D07307631E5626C2009DCC09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D07307641E5626C2009DCC09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D07307661E5626C2009DCC09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198D660486C29E7D38B15DF5 /* Pods-PaypalTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				INFOPLIST_FILE = PaypalTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PaypalTest/PaymentsSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandip.PaypalTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PaypalTest/PaypalTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D07307671E5626C2009DCC09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DEB8141F7D8F56E6DE7DA6 /* Pods-PaypalTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				INFOPLIST_FILE = PaypalTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PaypalTest/PaymentsSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandip.PaypalTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PaypalTest/PaypalTest-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D073074E1E5626C2009DCC09 /* Build configuration list for PBXProject "PaypalTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07307631E5626C2009DCC09 /* Debug */,
+				D07307641E5626C2009DCC09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D07307651E5626C2009DCC09 /* Build configuration list for PBXNativeTarget "PaypalTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07307661E5626C2009DCC09 /* Debug */,
+				D07307671E5626C2009DCC09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D073074B1E5626C2009DCC09 /* Project object */;
+}
